@@ -1,0 +1,125 @@
+[
+  {
+    "id": "user-logged-into-the-mems-application-with-the-correct-credentials",
+    "description": "",
+    "name": "User logged into the MEMs application with the correct credentials",
+    "keyword": "Feature",
+    "line": 1,
+    "elements": [
+      {
+        "after": [
+          {
+            "result": {
+              "duration": 2339120136,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "id": "user-logged-into-the-mems-application-with-the-correct-credentials;user-logs-into-the-mems-application",
+        "tags": [
+          {
+            "name": "@Login",
+            "line": 3
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 4023269,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.testEnvironment()"
+            }
+          },
+          {
+            "result": {
+              "duration": 6129495490,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "description": "",
+        "name": "User logs into the MEMs application",
+        "keyword": "Scenario",
+        "line": 4,
+        "steps": [
+          {
+            "result": {
+              "duration": 1769306561,
+              "status": "passed"
+            },
+            "name": "User enters mems url into the browser",
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "LoginTest.user_logged_in_to_on()"
+            }
+          },
+          {
+            "result": {
+              "duration": 148376118,
+              "status": "passed"
+            },
+            "name": "User enters LoginUserName as in the \"userProfile\".json file",
+            "keyword": "When ",
+            "line": 6,
+            "match": {
+              "arguments": [
+                {
+                  "val": "userProfile",
+                  "offset": 37
+                }
+              ],
+              "location": "LoginTest.user_enters_as(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 97169753,
+              "status": "passed"
+            },
+            "name": "User enters LoginPassword",
+            "keyword": "And ",
+            "line": 7,
+            "match": {
+              "location": "LoginTest.user_enter_as()"
+            }
+          },
+          {
+            "result": {
+              "duration": 5819440191,
+              "status": "passed"
+            },
+            "name": "User click on the login button",
+            "keyword": "Then ",
+            "line": 8,
+            "match": {
+              "location": "LoginTest.user_click_on_the_button()"
+            }
+          },
+          {
+            "result": {
+              "duration": 5154378590,
+              "status": "passed"
+            },
+            "name": "verify that Overview dashboard screen should be displayed",
+            "keyword": "And ",
+            "line": 9,
+            "match": {
+              "location": "LoginTest.logged_in_username_should_be()"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "LoginToApp.feature"
+  }
+]
