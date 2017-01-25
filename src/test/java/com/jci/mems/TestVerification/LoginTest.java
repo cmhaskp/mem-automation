@@ -54,7 +54,7 @@ public class LoginTest{
 	@When("^User enters LoginUserName as in the \"(.*?)\"\\.json file$")
 	public void user_enters_as(String filename) throws Throwable {
 		json = ReadJson.readJsonFile(filename);
-		System.out.println("Username  "+ (String) json.get("username"));
+		System.out.println("Username is  "+ (String) json.get("username"));
 		loginpage.setUserName((String) json.get("username"));
 	}
 
